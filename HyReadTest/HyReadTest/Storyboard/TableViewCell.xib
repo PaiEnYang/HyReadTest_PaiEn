@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="258" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="HyReadTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lbu-GW-0dR">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqK-3q-PiN">
+                        <rect key="frame" x="0.0" y="154" width="110" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <attributedString key="attributedText">
+                            <fragment content="您已登入N號房:韓國史上最大宗">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="PingFangTC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV3-En-6C9">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="199"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="checkBookDetailBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Msx-jR-TnP"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-fk-qWM">
+                        <rect key="frame" x="66" y="0.0" width="44" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noFavorite" translatesAutoresizingMaskIntoConstraints="NO" id="M84-i0-JQe">
+                                <rect key="frame" x="8.9999999999999982" y="8.9999999999999982" width="26.333333333333329" height="26.333333333333329"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-dm-ywd">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="favoriteBookBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gEC-em-Xjf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M84-i0-JQe" firstAttribute="centerX" secondItem="A7N-fk-qWM" secondAttribute="centerX" id="5na-Wh-SnN"/>
+                            <constraint firstItem="M84-i0-JQe" firstAttribute="height" secondItem="A7N-fk-qWM" secondAttribute="height" multiplier="0.598485" id="HAG-CM-B3o"/>
+                            <constraint firstItem="gJj-dm-ywd" firstAttribute="width" secondItem="A7N-fk-qWM" secondAttribute="width" id="Th6-Cz-VTh"/>
+                            <constraint firstItem="gJj-dm-ywd" firstAttribute="height" secondItem="A7N-fk-qWM" secondAttribute="height" id="cdr-AG-DYl"/>
+                            <constraint firstItem="M84-i0-JQe" firstAttribute="centerY" secondItem="A7N-fk-qWM" secondAttribute="centerY" id="f07-ru-Kzq"/>
+                            <constraint firstItem="M84-i0-JQe" firstAttribute="width" secondItem="A7N-fk-qWM" secondAttribute="width" multiplier="0.598485" id="go5-8G-14a"/>
+                            <constraint firstItem="gJj-dm-ywd" firstAttribute="centerY" secondItem="A7N-fk-qWM" secondAttribute="centerY" id="uSy-Eh-Hhp"/>
+                            <constraint firstItem="gJj-dm-ywd" firstAttribute="centerX" secondItem="A7N-fk-qWM" secondAttribute="centerX" id="uWP-gW-icx"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-uu-jS0">
+                        <rect key="frame" x="120" y="0.0" width="110" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKz-k8-184">
+                        <rect key="frame" x="120" y="154" width="110" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <attributedString key="attributedText">
+                            <fragment content="您已登入N號房:韓國史上最大宗">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="PingFangTC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdD-jb-eX6">
+                        <rect key="frame" x="120" y="0.0" width="110" height="199"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="checkBookDetailBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gFQ-Pb-RUi"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28w-pW-3xH">
+                        <rect key="frame" x="186" y="0.0" width="44" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noFavorite" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-zK-JTC">
+                                <rect key="frame" x="8.9999999999999982" y="8.9999999999999982" width="26.333333333333329" height="26.333333333333329"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5o-dD-Mfh">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="favoriteBookBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y9C-xJ-NWe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BoS-zK-JTC" firstAttribute="height" secondItem="28w-pW-3xH" secondAttribute="height" multiplier="0.598485" id="5mK-cc-esm"/>
+                            <constraint firstItem="z5o-dD-Mfh" firstAttribute="centerX" secondItem="28w-pW-3xH" secondAttribute="centerX" id="Eme-JY-67S"/>
+                            <constraint firstItem="BoS-zK-JTC" firstAttribute="width" secondItem="28w-pW-3xH" secondAttribute="width" multiplier="0.598485" id="MNT-0S-LKX"/>
+                            <constraint firstItem="z5o-dD-Mfh" firstAttribute="width" secondItem="28w-pW-3xH" secondAttribute="width" id="Wh1-ED-ejE"/>
+                            <constraint firstItem="z5o-dD-Mfh" firstAttribute="height" secondItem="28w-pW-3xH" secondAttribute="height" id="Xay-xe-R67"/>
+                            <constraint firstItem="z5o-dD-Mfh" firstAttribute="centerY" secondItem="28w-pW-3xH" secondAttribute="centerY" id="aBV-3N-WHQ"/>
+                            <constraint firstItem="BoS-zK-JTC" firstAttribute="centerX" secondItem="28w-pW-3xH" secondAttribute="centerX" id="kiQ-dG-W22"/>
+                            <constraint firstItem="BoS-zK-JTC" firstAttribute="centerY" secondItem="28w-pW-3xH" secondAttribute="centerY" id="wn1-o3-0fU"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-r8-sSq">
+                        <rect key="frame" x="240" y="0.0" width="110" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUv-6c-wB7">
+                        <rect key="frame" x="240" y="154" width="110" height="45"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <attributedString key="attributedText">
+                            <fragment content="您已登入N號房:韓國史上最大宗">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="PingFangTC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De3-ek-NZu">
+                        <rect key="frame" x="240" y="0.0" width="110" height="199"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="checkBookDetailBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SKH-C4-1y2"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tR-wj-BzJ">
+                        <rect key="frame" x="306" y="0.0" width="44" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noFavorite" translatesAutoresizingMaskIntoConstraints="NO" id="9hl-d9-B83">
+                                <rect key="frame" x="8.9999999999999982" y="8.9999999999999982" width="26.333333333333329" height="26.333333333333329"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJu-4W-hZ5">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="favoriteBookBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oYK-St-6fN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9hl-d9-B83" firstAttribute="height" secondItem="1tR-wj-BzJ" secondAttribute="height" multiplier="0.598485" id="B5Z-vd-YoR"/>
+                            <constraint firstItem="pJu-4W-hZ5" firstAttribute="centerX" secondItem="1tR-wj-BzJ" secondAttribute="centerX" id="FxZ-vJ-K3b"/>
+                            <constraint firstItem="9hl-d9-B83" firstAttribute="centerY" secondItem="1tR-wj-BzJ" secondAttribute="centerY" id="PVZ-qX-77s"/>
+                            <constraint firstItem="pJu-4W-hZ5" firstAttribute="height" secondItem="1tR-wj-BzJ" secondAttribute="height" id="g4r-Mi-MGO"/>
+                            <constraint firstItem="9hl-d9-B83" firstAttribute="width" secondItem="1tR-wj-BzJ" secondAttribute="width" multiplier="0.598485" id="imJ-0h-2b4"/>
+                            <constraint firstItem="pJu-4W-hZ5" firstAttribute="centerY" secondItem="1tR-wj-BzJ" secondAttribute="centerY" id="jsS-OH-KVy"/>
+                            <constraint firstItem="pJu-4W-hZ5" firstAttribute="width" secondItem="1tR-wj-BzJ" secondAttribute="width" id="kP3-eJ-kji"/>
+                            <constraint firstItem="9hl-d9-B83" firstAttribute="centerX" secondItem="1tR-wj-BzJ" secondAttribute="centerX" id="ucy-tO-IWL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QSs-uu-jS0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="00c-GP-tKy"/>
+                    <constraint firstItem="BV3-En-6C9" firstAttribute="leading" secondItem="Lbu-GW-0dR" secondAttribute="leading" id="03N-W0-2jZ"/>
+                    <constraint firstItem="1tR-wj-BzJ" firstAttribute="trailing" secondItem="zZg-r8-sSq" secondAttribute="trailing" id="0cA-X6-5yJ"/>
+                    <constraint firstItem="AUv-6c-wB7" firstAttribute="width" secondItem="zZg-r8-sSq" secondAttribute="width" id="29p-Yr-2tX"/>
+                    <constraint firstItem="Lbu-GW-0dR" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.773869" id="3En-3l-1P4"/>
+                    <constraint firstItem="1tR-wj-BzJ" firstAttribute="top" secondItem="zZg-r8-sSq" secondAttribute="top" id="47S-4M-GnW"/>
+                    <constraint firstItem="BV3-En-6C9" firstAttribute="top" secondItem="Lbu-GW-0dR" secondAttribute="top" id="4Ng-4o-7C0"/>
+                    <constraint firstItem="ZKz-k8-184" firstAttribute="leading" secondItem="QSs-uu-jS0" secondAttribute="leading" id="5Ct-6C-n5w"/>
+                    <constraint firstItem="xdD-jb-eX6" firstAttribute="bottom" secondItem="ZKz-k8-184" secondAttribute="bottom" id="6X2-Vb-FUs"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="leading" secondItem="Lbu-GW-0dR" secondAttribute="leading" id="8Vx-Ck-ZAH"/>
+                    <constraint firstItem="A7N-fk-qWM" firstAttribute="height" secondItem="Lbu-GW-0dR" secondAttribute="height" multiplier="0.285714" id="95J-QU-3SC"/>
+                    <constraint firstItem="Lbu-GW-0dR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ARR-k1-rzu"/>
+                    <constraint firstItem="xdD-jb-eX6" firstAttribute="leading" secondItem="QSs-uu-jS0" secondAttribute="leading" id="ECx-PS-sqj"/>
+                    <constraint firstItem="ZKz-k8-184" firstAttribute="width" secondItem="QSs-uu-jS0" secondAttribute="width" id="F58-sG-cbH"/>
+                    <constraint firstAttribute="bottom" secondItem="ZKz-k8-184" secondAttribute="bottom" id="FkI-Do-T8B"/>
+                    <constraint firstItem="QSs-uu-jS0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.314286" id="J2N-ww-5MP"/>
+                    <constraint firstItem="xdD-jb-eX6" firstAttribute="top" secondItem="QSs-uu-jS0" secondAttribute="top" id="JMF-OB-WSR"/>
+                    <constraint firstItem="A7N-fk-qWM" firstAttribute="width" secondItem="Lbu-GW-0dR" secondAttribute="width" multiplier="0.4" id="NdT-bc-s3D"/>
+                    <constraint firstItem="28w-pW-3xH" firstAttribute="trailing" secondItem="QSs-uu-jS0" secondAttribute="trailing" id="QLo-23-8Kl"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="top" secondItem="Lbu-GW-0dR" secondAttribute="bottom" id="TgV-9E-ujD"/>
+                    <constraint firstItem="28w-pW-3xH" firstAttribute="height" secondItem="QSs-uu-jS0" secondAttribute="height" multiplier="0.285714" id="VBy-HJ-WmY"/>
+                    <constraint firstItem="Lbu-GW-0dR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WCN-9V-5GV"/>
+                    <constraint firstItem="zZg-r8-sSq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XUs-IX-jff"/>
+                    <constraint firstItem="QSs-uu-jS0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="YX7-IN-N9l"/>
+                    <constraint firstItem="1tR-wj-BzJ" firstAttribute="height" secondItem="zZg-r8-sSq" secondAttribute="height" multiplier="0.285714" id="aMq-Sf-642"/>
+                    <constraint firstItem="A7N-fk-qWM" firstAttribute="top" secondItem="Lbu-GW-0dR" secondAttribute="top" id="afD-ry-6NK"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="width" secondItem="Lbu-GW-0dR" secondAttribute="width" id="bxg-5s-OXL"/>
+                    <constraint firstItem="1tR-wj-BzJ" firstAttribute="width" secondItem="zZg-r8-sSq" secondAttribute="width" multiplier="0.4" id="cmA-o7-bSO"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.314286" id="dKd-3N-dls"/>
+                    <constraint firstItem="28w-pW-3xH" firstAttribute="top" secondItem="QSs-uu-jS0" secondAttribute="top" id="drb-On-s3a"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="trailing" secondItem="Lbu-GW-0dR" secondAttribute="trailing" id="e7F-fr-cDf"/>
+                    <constraint firstItem="AUv-6c-wB7" firstAttribute="leading" secondItem="zZg-r8-sSq" secondAttribute="leading" id="eee-Aa-TKD"/>
+                    <constraint firstItem="28w-pW-3xH" firstAttribute="width" secondItem="QSs-uu-jS0" secondAttribute="width" multiplier="0.4" id="fVr-Af-dzN"/>
+                    <constraint firstItem="zZg-r8-sSq" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.314286" id="fsi-Xn-NVr"/>
+                    <constraint firstItem="De3-ek-NZu" firstAttribute="bottom" secondItem="AUv-6c-wB7" secondAttribute="bottom" id="hJL-pF-w01"/>
+                    <constraint firstItem="AUv-6c-wB7" firstAttribute="top" secondItem="zZg-r8-sSq" secondAttribute="bottom" id="hmQ-lP-qgf"/>
+                    <constraint firstItem="De3-ek-NZu" firstAttribute="trailing" secondItem="zZg-r8-sSq" secondAttribute="trailing" id="ljy-10-gGF"/>
+                    <constraint firstItem="xdD-jb-eX6" firstAttribute="trailing" secondItem="QSs-uu-jS0" secondAttribute="trailing" id="niJ-EU-miV"/>
+                    <constraint firstItem="YqK-3q-PiN" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.226131" id="oXH-GF-ScA"/>
+                    <constraint firstItem="zZg-r8-sSq" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.773869" id="pDf-lZ-oKk"/>
+                    <constraint firstItem="QSs-uu-jS0" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.773869" id="pJ4-sD-bQa"/>
+                    <constraint firstItem="ZKz-k8-184" firstAttribute="top" secondItem="QSs-uu-jS0" secondAttribute="bottom" id="qKn-y3-cVd"/>
+                    <constraint firstItem="BV3-En-6C9" firstAttribute="trailing" secondItem="Lbu-GW-0dR" secondAttribute="trailing" id="rJb-uB-f6P"/>
+                    <constraint firstItem="BV3-En-6C9" firstAttribute="bottom" secondItem="YqK-3q-PiN" secondAttribute="bottom" id="rQq-fS-aKh"/>
+                    <constraint firstItem="A7N-fk-qWM" firstAttribute="trailing" secondItem="Lbu-GW-0dR" secondAttribute="trailing" id="rmr-SD-pV7"/>
+                    <constraint firstItem="AUv-6c-wB7" firstAttribute="trailing" secondItem="zZg-r8-sSq" secondAttribute="trailing" id="sYH-DS-5dG"/>
+                    <constraint firstAttribute="trailing" secondItem="zZg-r8-sSq" secondAttribute="trailing" id="ulc-Lz-yaW"/>
+                    <constraint firstItem="De3-ek-NZu" firstAttribute="top" secondItem="zZg-r8-sSq" secondAttribute="top" id="vlY-W0-rnZ"/>
+                    <constraint firstItem="ZKz-k8-184" firstAttribute="trailing" secondItem="QSs-uu-jS0" secondAttribute="trailing" id="wdh-Zc-uy0"/>
+                    <constraint firstAttribute="bottom" secondItem="AUv-6c-wB7" secondAttribute="bottom" id="zNl-xd-Ypg"/>
+                    <constraint firstItem="De3-ek-NZu" firstAttribute="leading" secondItem="zZg-r8-sSq" secondAttribute="leading" id="zbP-rj-QkD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookButton1Outlet" destination="BV3-En-6C9" id="KiR-Wm-iPH"/>
+                <outlet property="bookButton2Outlet" destination="xdD-jb-eX6" id="djL-6J-VFh"/>
+                <outlet property="bookButton3Outlet" destination="De3-ek-NZu" id="cFq-XP-i2c"/>
+                <outlet property="bookImage1" destination="Lbu-GW-0dR" id="AJB-E5-qVV"/>
+                <outlet property="bookImage2" destination="QSs-uu-jS0" id="8wB-yt-pOe"/>
+                <outlet property="bookImage3" destination="zZg-r8-sSq" id="7XB-SY-UOX"/>
+                <outlet property="bookTitle1" destination="YqK-3q-PiN" id="328-gz-rEg"/>
+                <outlet property="bookTitle2" destination="ZKz-k8-184" id="MbU-rd-Szv"/>
+                <outlet property="bookTitle3" destination="AUv-6c-wB7" id="dEw-YM-qIA"/>
+                <outlet property="bookfavoriteButton1Outlet" destination="gJj-dm-ywd" id="Ix6-Td-FgB"/>
+                <outlet property="bookfavoriteButton2Outlet" destination="z5o-dD-Mfh" id="xtS-mz-HmW"/>
+                <outlet property="bookfavoriteButton3Outlet" destination="pJu-4W-hZ5" id="m9t-jW-wsw"/>
+                <outlet property="bookfavoriteImage1" destination="M84-i0-JQe" id="TpV-TI-PWT"/>
+                <outlet property="bookfavoriteImage2" destination="BoS-zK-JTC" id="BYv-MB-1lg"/>
+                <outlet property="bookfavoriteImage3" destination="9hl-d9-B83" id="Juh-pM-d2j"/>
+            </connections>
+            <point key="canvasLocation" x="189.31297709923663" y="63.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noFavorite" width="24" height="24"/>
+    </resources>
+</document>
