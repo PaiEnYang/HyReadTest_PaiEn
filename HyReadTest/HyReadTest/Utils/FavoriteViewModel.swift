@@ -14,6 +14,10 @@ protocol favoriteViewModelDelegate: AnyObject{
 
 class FavoriteViewModel: NSObject, TableViewCellDelegate{
     
+    
+    // 亂寫
+    
+    
     weak var delegate: favoriteViewModelDelegate?
     weak var libraryDelegate: LibraryViewModel?
     var bookFavoriteArray: [Book] = []
